@@ -14,7 +14,7 @@ export default function App() {
                 <path d="M21 21l-4.3-4.3" />
               </svg>
             </span>
-            <span className="font-display text-[15px] font-bold tracking-tight">PAINTSCAN</span>
+            <span className="font-display text-[15px] font-bold tracking-tight">Check Your Paint!</span>
           </a>
           <span className="hidden font-mono2 text-[10px] uppercase tracking-[0.16em] text-muted-foreground sm:block">
             Surface degradation analyzer
@@ -75,7 +75,7 @@ export default function App() {
       <footer className="border-t border-border">
         <div className="mx-auto flex w-full max-w-[1400px] flex-wrap items-center justify-between gap-3 px-4 py-6 sm:px-6 lg:px-10">
           <span className="font-mono2 text-[11px] text-muted-foreground">
-            PAINTSCAN — classical CV pipeline for paint degradation & mold measurement
+            Check Your Paint! — CV pipeline for paint degradation & mold measurement
           </span>
           <span className="font-mono2 text-[11px] text-muted-foreground/60">
             k-means · CIE L*a*b* · black-hat morphology · connected components
