@@ -1,5 +1,5 @@
-import Analyzer from '@/sections/Analyzer';
-import HowItWorks from '@/sections/HowItWorks';
+import Analyzer from './Analyzer';
+import HowItWorks from './HowItWorks';
 
 export default function App() {
   return (
