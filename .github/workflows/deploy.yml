@@ -28,9 +28,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./app
 
       - name: Build project
         run: npm run build
+        working-directory: ./app
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
