@@ -1,4 +1,5 @@
 import Analyzer from './Analyzer';
+import HowItWorks from './HowItWorks';
 
 export default function App() {
   return (
@@ -19,7 +20,13 @@ export default function App() {
             Surface degradation analyzer
           </span>
           <nav className="ml-auto flex items-center gap-1">
-            <
+            <a
+              href="#method"
+              className="grid min-h-[44px] place-items-center rounded-md px-2 font-mono2 text-[10px] uppercase tracking-wider text-muted-foreground transition-colors hover:text-foreground sm:px-3 sm:text-[11px]"
+            >
+              Method
+            </a>
+            <a
               href="/paint_degradation_pipeline.py"
               download
               className="grid min-h-[44px] place-items-center rounded-md px-2 font-mono2 text-[10px] uppercase tracking-wider text-primary transition-colors hover:bg-accent sm:px-3 sm:text-[11px]"
@@ -34,15 +41,16 @@ export default function App() {
       <div className="mx-auto w-full max-w-[1400px] px-4 pb-10 pt-12 sm:px-6 sm:pt-16 lg:px-10">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div className="max-w-2xl">
-            
+            <span className="label-tech">Computer vision · segmentation · measurement</span>
             <h1 className="mt-3 font-display text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
               How much of this wall is <span className="text-[#f0b429]">mold</span>,
               {' '}<span className="text-[#38bdf8]">cracked</span> or{' '}
               <span className="text-[#fb7185]">peeling</span>?
             </h1>
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-             Get precise surface percentages in a matter of seconds by uploading inspection photographs
-             Segmenting pixel-by-pixel using color clustering and morphological fracture extraction.
+              Upload inspection photos and get exact surface percentages in seconds —
+              segmented pixel-by-pixel with color clustering and morphological crack
+              extraction. No training data, no cloud upload, no install.
             </p>
           </div>
           <div className="flex gap-8 border-l border-border pl-6">
@@ -54,11 +62,11 @@ export default function App() {
               <div key={l}>
                 <div className="font-display text-2xl font-bold text-primary">{v}</div>
                 <div className="label-tech mt-1">{l}</div>
-            {([
-              ['3', 'defect classes'],
-              ['5', 'color clusters'],
-              ['100%', 'in-browser'],
-            ] as [string, string][]).map(([v, l]) => (
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
 
       <Analyzer />
       <HowItWorks />
